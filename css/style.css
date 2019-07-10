@@ -1,0 +1,813 @@
+@font-face {
+    font-family: "Veteran Typewriter";
+    src: url("../fonts/veteran typewriter.ttf");
+}
+@font-face {
+    font-family: "Bernard MT";
+    src: url("../fonts/BERNHC.TTF");
+}
+@font-face {
+    font-family: "Avenir Black";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+}
+@font-face {
+    font-family: "Avenir Book";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+}
+@font-face {
+    font-family: "Avenir Roman";
+    src: url("../fonts/AvenirLTStd-Roman.otf");
+}
+@font-face {
+    font-family: "Impact";
+    src: url("../fonts/impact.ttf");
+}
+/* ---Navbar--- */
+
+.bg-darker {
+    background-color: #313131;
+}
+.afpbrand {
+    margin: 0px 2px -35px 0px;
+}
+.nav-item.home {
+    margin-left: 24px;
+}    
+.nav-item {
+    font-size: 17px;
+    margin: 6px 12px;
+}
+.nav-donate {
+    font-size: 17px;
+    padding: 10px 17px;
+}
+.history {
+    background-color: #3e5480;
+    height: 37px;
+    padding-top: 0rem; 
+}
+@media (max-width: 991px) {
+    .nav-item {
+        margin: 6px 13px;
+    }
+    .nav-donate {
+        margin-top: 4px;
+    }
+    .navbar-toggler {
+        margin-right: 8px;
+    }
+    .navbar-collapse {
+        margin: 30px 0px 10px;
+    }
+}
+/* ---End--- */
+
+/* ---Body--- */
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Avenir Roman';
+    font-weight: 600;
+}
+hr {
+    margin: 10px -2px;
+}
+a:hover {
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: calc(100vh - 342px);
+}
+.flex-box {
+    flex: 1;
+}
+.container {
+    max-width: 1300px;
+}
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.banner {
+    position: relative;
+    height: 145px;
+    overflow: hidden;
+}
+.banner-home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner-text {
+    position: absolute;
+    font-family: 'Veteran Typewriter';
+    font-size: 50px;
+    color: #fff;
+    text-shadow: #000 0px 0 28px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.banner-text.stories {
+    width: 257px;
+}
+.banner-text.about {
+    width: 454px;
+    font-size: 50px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col-sm-4 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.col-7 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.vlog-card, .col-5 {
+    padding-left: 16px;
+    padding-right: 0px;
+}
+.vlog-polo {
+    width: 190px;
+    height: 190px;
+}
+.card-text-group>h5 {
+    font-size: 25px;
+}
+.vlog-card>a {
+    color: #000;
+}
+.home-video {
+    margin-bottom: -6px; 
+}
+.vet-section1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sonnyHome2.png);
+    background-size: cover;
+}
+.vet-section2 {
+    position: relative;
+    max-width: 1270px;
+    height: 522px;
+    background: url(../img/ripHome2.png);
+    background-size: cover;
+}
+.vet-section1:hover .image1 {
+    transform: translateX(6px);
+    transition-delay: .6s;
+}
+.vet-section2:hover .image2 {
+    transform: translateX(-6px);
+    transition-delay: .6s;
+}
+.image1 {
+    width: 570px;
+    height: 290px;
+    z-index: 1;
+    transition: all .5s ease;
+    transition-delay: 0s;
+    position: absolute;
+    top: 115px;
+    left: 100px;
+}
+.image2 {
+    width: 570px;
+    height: 290px;
+    z-index: 1;
+    transition: all .5s ease;
+    transition-delay: 0s;
+    position: absolute;
+    top: 115px;
+    left: 600px;
+}
+.overlay {
+    width: 1270px;
+    height: 522px;
+    background: rgba(255, 255, 255, .17);
+    transition: all .4s ease;
+    z-index: 4;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.overlay:hover {
+    opacity: 0;
+    transition-delay: 0s;
+}
+    /* Cards */
+.card-row {
+    margin: 12px -13px 0px; 
+}
+.card-row.row {
+    padding: 0px 6px
+}
+.card-row.row>div>a {
+    color: #000;
+}
+.card {
+    background-color: #f1f1f1;
+    transition: .2s;
+}
+.card:hover {
+    background-color: #ffffff;
+}
+.new.card {
+    background-color: #dddddd;
+    transition: .2s;
+}
+.new.card:hover {
+    background-color: #dddddd;
+}
+.coming-soon {
+    font-family: 'Impact', 'Anton-Regular';
+    font-size: 44px;
+    position: absolute;
+    width: 280px;
+    top: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #fff;
+}
+.card-img-top {
+    object-fit: cover;
+    height: 270px;
+}
+.card-block {
+    padding-top: 17px;
+    padding-left: 18px;
+}
+.card-body {
+    min-height: 234px;
+    padding: 19px;
+}
+.card-block-vlog {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.img-fluid.home {
+    width: 160px;
+    height: 160px;
+}
+.card.stories {
+    margin-bottom: 13px;
+}
+.card-title {
+    font-family: 'Veteran Typewriter';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.card-text {
+    font-family: 'Veteran Typewriter';
+    font-size: 21px;
+    text-decoration: none;
+}
+.card-title.all-stories {
+    font-family: 'Avenir Book';
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text.all-stories {
+    font-family: 'Avenir Book';
+    font-size: 18px;
+    text-decoration: none;
+}
+.card {
+    margin-bottom: 12px;
+}
+    /* End */
+.vlog-section {
+    position: relative;
+    height: 700px;
+    background: url(../img/vlogPhoto.png); 
+    background-size: cover;
+    transition: .6s;
+}
+.vlog-section:hover {
+    box-shadow: inset 1px 1px 300px 4px #000000af;
+    -webkit-box-shadow: inset 1px 1px 300px 4px #000000af;
+    -moz-box-shadow: inset 1px 1px 300px 4px #000000af;
+    -o-box-shadow: inset 1px 1px 300px 4px #000000af;
+}
+.vlog-logo {
+    position: absolute;
+    height: 175px;
+    width: 660px;
+    top: 240px;
+    left: 305px;
+}
+.btn-vlog {
+    border: 4px solid#000;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    height: 60px;
+    width: 350px;
+    top: 415px;
+    left: 460px;
+}
+.btn-vlog:hover {
+    border: 4px solid yellow;
+    background-color: #000;
+    color: yellow;
+}
+.btn-vlog::after {
+    border: 4px solid#000;
+    background-color: #000;
+    color: yellow;
+}
+.stories-btn {
+    font-family: 'Avenir Black', 'Bernard MT', 
+                 'Gill Sans MT', 'Trebuchet MS';
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 481px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0px 0px 14px;
+    padding: 12px 60px;
+    z-index: 5;
+}
+.article-about {
+    font-family: 'Avenir Book';
+    font-size: 18px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #ffffffbe;
+    padding: 20px 16px 10px;
+    height: 100%;
+}
+.banner-about {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+.about-h {
+    position: relative;
+    top: -115px;
+    left: 635px;
+    text-align: center;
+    font-family: 'Veteran Typewriter';
+    font-size: 56px;
+    color: #fff;
+    text-shadow: #000 0px 0 10px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.about-pic {
+    float: left;
+    margin: 5px 12px 2px 0px;
+    width: 328px;
+    height: 328px;
+}
+.about-video {
+    margin: 5px 0px 13px 12px;
+    float: right;
+    width: 679px;
+    height: 382px;
+}
+.article-vlog {
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 8px 10px;
+    min-height: 182px;
+}
+.article-donate {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 52px 50px;
+}
+.patreon:hover {
+    transform: translateX(-6px);
+    transition-delay: .2s;
+}
+.gofundme:hover {
+    transform: translateX(6px);
+    transition-delay: .2s;
+}
+.patreon {
+    width: 550px;
+    height: auto;
+    transition: 400ms;
+}
+.gofundme {
+    width: 550px;
+    height: auto;
+    transition: 400ms;
+}
+.donate-section {
+    position: relative;
+}
+.donate-h {
+    margin: 16px 0px;
+}
+.donate-p {
+    font-family: 'Avenir Roman', 'Bernard MT';
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    line-height: 34px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 11px;
+    position: absolute;
+    width: 1000px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.btn-danger {
+    background-color: #d43333;
+}
+.btn-donate {
+    font-family: 'Avenir Black', 'Bernard MT';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 10px;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 50px 8px;
+    z-index: 4;
+}
+.article-date {
+    float: right;
+    font-size: 14px;
+    color: #838383;
+    margin: -28px 0px 0px;
+}
+.article-main {
+    position: relative;
+    padding: 14px 12px 0px;
+}
+.article-vlog>.article-p {
+    margin-bottom: 0;
+    padding: 0px 2px 0px 2px;
+}
+.article-p.donate {
+    text-align: center;
+}
+.article-p {
+    font-family: 'Avenir Book';
+    font-size: 1.15em;
+    padding: 0px 2px 8px 2px;
+}
+.quote-box {
+    position: relative;
+    background-color: #f4f4f4;
+    float: right;
+    width: 350px;
+    height: 256px;
+    margin: 5px 2px 2px 11px;
+}
+.big-quote {
+    width: 140px;
+    height: auto;
+    padding: 12px;
+}
+.quote {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    font-family: 'Avenir Book';
+    font-size: 34px;
+    width: 250px;
+}
+.sonny-img1 {
+    float: right;
+    width: 700px;
+    height: 416px;
+    margin: 8px 2px 2px 11px;
+}
+.sonny-img2 {
+    float: left;
+    width: 400px;
+    height: 630px;
+    margin: 8px 12px 2px 0px;
+}
+.sonny-img3 {
+    float: right;
+    width: 284px;
+    height: 284px;
+    margin: 8px 2px 2px 11px;
+}
+.rip-img1 {
+    float: left;
+    width: 630px;
+    height: 413px;
+    margin: 5px 12px 2px 2px;
+}
+.sparks-img1 {
+    float: left;
+    width: 700px;
+    height: 412px;
+    margin: 5px 12px 2px 2px;
+}
+.warren-img1 {
+    float: left;
+    width: 700px;
+    height: 412px;
+    margin: 5px 12px 2px 2px;
+}
+.mel-img1 {
+    float: left;
+    width: 700px;
+    height: auto;
+    margin: 8px 12px 2px 2px;
+}
+.overlap-center {
+    position: absolute;
+    top: 58.6%;
+    left: 5.3%;
+}
+
+/* ---Footer--- */
+
+    /*  Social Sharing Icons  */
+    .ssk-group {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .ssk:before {
+        font-size: 28px;
+    }
+    .ssk {
+        margin: 0px 4px;
+        border-radius: 25px;
+        padding: 11px;
+        transition-duration: 200ms;
+    }
+    .ssk-youtube {
+        background-color: #ff0000;
+    }
+    .ssk-youtube:hover {
+        background-color: #ce0000;
+    }
+    .ssk-instagram {
+        background-color: #fb3958;
+    }
+    .ssk-instagram:hover {
+        background-color: #d12f4a;
+    }
+    /* End */
+
+footer {
+    width: 100%;
+    min-height: 218px;
+    padding: 20px 6px;
+}
+footer>hr {
+    margin: 30px -20px;
+}
+.signature {
+    color: #8d8d8d;
+}
+.signature>a {
+    text-decoration: underline;
+    color: #8d8d8d;
+    margin-left: 5px;
+}
+.signature>a:hover {
+    text-decoration: underline;
+    color: #9b9b9b;
+    margin-left: 5px;
+}
+.dtac, .caf {
+    width: auto;
+    height: 140px;
+    margin: 20px 40px;
+}
+
+/* ---End--- */
+
+@media (max-width: 576px) {
+    hr {
+        margin: 8px -3px;
+    }
+    .nav-item.home {
+        margin-left: 13px;
+    }    
+    .container {
+        padding: 0px 0px;
+    }
+    .col-sm-4 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .px-3 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card {
+        margin: 0px 0px 5px; 
+        background-color: #f8f8f8;
+    }
+    .card-row {
+        margin: 5px 0px 1px;
+        width: 100%;
+    }
+    .img-fluid.home {
+        width: 140px;
+        height: 140px;
+    }
+    .card-body {
+        padding: 16px;
+    }
+    .card-block {
+        padding-top: 15px;
+        padding-left: 12px;
+    }
+    .card-block-vlog {
+        padding-top: 16px;
+        padding-left: 13px;
+    }
+    .card.stories {
+        margin: 3px 2px 4px;
+        min-width: 346px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .vlog-card {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card-block-vlog>.card-title {
+        font-size: 18px;
+    }
+    .card-block-vlog>.card-text {
+        font-size: 18px;
+    }
+    .vet-section1 {
+        display: none;
+    }
+    .vet-section2 {
+        display: none;
+    }
+    .stories-btn {
+        font-family: 'Bernard MT', 'Gill Sans', 
+                     'Gill Sans MT', 'Trebuchet MS';
+        font-size: 38px;
+        border-radius: 10px;
+        margin: 0px 0px 18px;
+        padding: 4px 80px;
+    }
+    .stories-btn, .btn-block {
+        display: inline;
+    }
+    .vlog-section {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+    .vlog-logo {
+        position: relative;
+        height: 85px;
+        width: 340px;
+        top: 80px;
+        left: 12px;
+        overflow: hidden;
+    }
+    .vlog-polo {
+        width: 140px;
+        height: 140px;
+    }
+    .donate-p {
+        display: none;
+    }
+    .btn-donate {
+        top: 160px;
+        overflow: hidden;
+    }
+    .donate-section {
+        overflow: hidden;
+        margin: 0;
+    }
+    .donate-section>img {
+        display: block;
+        margin: 0 -50% 0 0;
+        width: 200%;
+        height: auto;
+    }
+    .banner-text.vlog {
+        width: 310px;
+        font-size: 48px;
+    }
+    .banner-text.about {
+        width: 343px;
+        font-size: 38px;
+    }
+    .article-about {
+        padding-top: 14px;
+    }
+    .about-pic {
+        float: left;
+        margin: -1px -4px 10px ;
+        width: 102%;
+        height: auto;
+    }
+    .about-video {
+        margin: 0px 0px;
+        padding: 0px;
+        width: 100%;
+        height: 194px;
+    }
+    .article-donate {
+        padding: 10px 30px 20px;
+    }
+    .patreon {
+        width: 100%;
+        height: auto;
+        transition: 400ms;
+    }
+    .donate-line {
+        display: none;
+    }
+    .gofundme {
+        width: 100%;
+        height: auto;
+        transition: 400ms;
+    }
+    .article-title {
+        font-size: 27px;
+    }
+    .article-date {
+        font-size: 12px;
+        margin-top: -29px;
+    }
+    .article-p {
+        padding-bottom: 0px;
+    }
+    .article-main.warren {
+        height: 712px;
+    }
+    .warren-img1, .rip-img1, .sparks-img1, 
+    .sonny-img2, .mel-img1 {
+        width: 101.4%;
+        height: auto;
+        margin-left: -2px;
+        margin-bottom: 16px;
+    }
+    .sonny-img1, .sonny-img3 {
+        width: 101.4%;
+        height: auto;
+        margin-right: -2px;
+        margin-bottom: 14px;
+    }
+    .copyright, .signature {
+        font-size: 15px;
+    }
+    .dtac, .caf {
+        margin: 20px 0px;
+    }
+}
+
+/* ---End--- */
+
+
+
+/* NOTES
+    To find the exact spacing on the side of an 
+    element between a container and the element 
+    inside subtract the width of the element by 
+    the width of the container then divide the 
+    solution by 2. 
+*/
